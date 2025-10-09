@@ -1,3 +1,9 @@
 ﻿using Practice.ProblemSolving.DataStructures.Easy.Arrays;
 
-Arrays_DS.Main();
+#region Arrays
+
+// Arrays_DS.Main();
+
+_2D_Array_DS.Main();
+
+#endregion
