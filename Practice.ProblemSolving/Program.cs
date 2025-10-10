@@ -1,4 +1,7 @@
-﻿using Practice.ProblemSolving.DataStructures.Easy.Arrays;
+﻿using Common;
+using Practice.ProblemSolving.DataStructures.Easy.Arrays;
+
+ConsoleUtil.SetConsoleFontSize(24);
 
 #region Arrays
 
