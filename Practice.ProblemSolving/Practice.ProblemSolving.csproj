@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="DataStructures\Easy\LinkedLists\" />
-    <Folder Include="DataStructures\Easy\Trees\" />
   </ItemGroup>
 
   <ItemGroup>

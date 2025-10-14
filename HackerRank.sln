@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.ProblemSolving", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{771CC898-2EB1-4FB6-A955-C0B956DE4C26}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.DataStructures", "Practice.DataStructures\Practice.DataStructures.csproj", "{40E1B5A6-CC48-41CE-A0AD-5F9952A034DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{771CC898-2EB1-4FB6-A955-C0B956DE4C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{771CC898-2EB1-4FB6-A955-C0B956DE4C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{771CC898-2EB1-4FB6-A955-C0B956DE4C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E1B5A6-CC48-41CE-A0AD-5F9952A034DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E1B5A6-CC48-41CE-A0AD-5F9952A034DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E1B5A6-CC48-41CE-A0AD-5F9952A034DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E1B5A6-CC48-41CE-A0AD-5F9952A034DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40E1B5A6-CC48-41CE-A0AD-5F9952A034DB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F88A84B-8918-412A-975E-B35E2C4D8FF9}
