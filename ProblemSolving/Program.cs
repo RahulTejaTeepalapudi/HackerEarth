@@ -1,5 +1,5 @@
 ﻿using Common;
-using Practice.ProblemSolving.DataStructures.Easy.Trees;
+using ProblemSolving.DataStructures.Easy.Trees;
 
 ConsoleUtil.SetConsoleFontSize(24);
 
