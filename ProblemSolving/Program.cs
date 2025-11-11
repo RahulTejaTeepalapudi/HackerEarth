@@ -17,6 +17,10 @@ ConsoleUtil.SetConsoleFontSize(24);
 
 #region Trees
 
-Preorder_Traversal.Main();
+// Preorder_Traversal.Main();
+
+// Postorder_Traversal.Main();
+
+Inorder_Traversal.Main();
 
 #endregion
