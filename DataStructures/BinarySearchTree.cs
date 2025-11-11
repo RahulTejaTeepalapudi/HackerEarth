@@ -74,6 +74,24 @@ public class BinarySearchTree
         PostOrderRecursive(root.RightChild, list);
     }
 
+    public List<int> InOrder()
+    {
+        List<int> list = [];
+        InOrderRecursive(Root, list);
+        return list;
+    }
+
+    private static void InOrderRecursive(Node? root, List<int> list)
+    {
+        if (root == null)
+        {
+            return;
+        }
+        InOrderRecursive(root.LeftChild, list);
+        list.Add(root.Key);
+        InOrderRecursive(root.RightChild, list);
+    }
+
     public static int Height(Node? root)
     {
         if (root == null)
