@@ -1,4 +1,6 @@
-﻿namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
+﻿using Common;
+
+namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
 
 public partial class Result
 {
@@ -64,11 +66,15 @@ public class _2D_Array_DS
 
         int result = Result.HourglassSum(matrix);
 
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Magenta);
+
+        // Log input
         Console.WriteLine($"Input => 6X6 2D array");
         Console.WriteLine(string.Join(Environment.NewLine, matrix.Select(row => string.Join(" ", row))));
 
-        Console.ForegroundColor = ConsoleColor.Green;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Green);
+
+        // Log output
         Console.WriteLine($"Output => Maximum hourglass sum: {result}");
 
         Console.ReadKey();

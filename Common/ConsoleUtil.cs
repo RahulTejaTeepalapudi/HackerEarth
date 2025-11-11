@@ -56,4 +56,9 @@ public class ConsoleUtil
             Console.WriteLine("Failed to set console font size. Error: " + Marshal.GetLastWin32Error());
         }
     }
+
+    public static void SetForegroundColor(ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
+    }   
 }

@@ -1,4 +1,6 @@
-﻿namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
+﻿using Common;
+
+namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
 public partial class Result
 {
 
@@ -119,12 +121,14 @@ public class Left_Rotation
 
         List<int> arr = [.. lines[1].TrimEnd().Split(' ').Select(n => Convert.ToInt32(n))];
 
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Magenta);
+
+        // Log input
         Console.WriteLine($"Input: {string.Join(" ", arr)}");
 
         List<int> result = Result.RotateLeft(d, arr);
 
-        Console.ForegroundColor = ConsoleColor.Green;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Green);
         Console.WriteLine($"Output: {string.Join(" ", result)}");
 
         Console.ReadKey();

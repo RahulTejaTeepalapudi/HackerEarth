@@ -1,4 +1,5 @@
-﻿using DataStructures;
+﻿using Common;
+using DataStructures;
 
 namespace ProblemSolving.DataStructures.Easy.Trees;
 
@@ -40,7 +41,9 @@ public class Postorder_Traversal
 
         List<int> arr = [.. lines[1].TrimEnd().Split(' ').Select(n => Convert.ToInt32(n))];
 
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Magenta);
+
+        // Log input
         Console.WriteLine($"Input: {string.Join(" ", arr)}");
 
         var tree = new BinarySearchTree(); // Binary Search Tree has to be created in the actual problem in HackerRank
@@ -52,7 +55,9 @@ public class Postorder_Traversal
 
         var result = tree.PostOrder();
 
-        Console.ForegroundColor = ConsoleColor.Green;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Green);
+
+        // Log output
         Console.WriteLine($"Output: {string.Join(" ", result)}");
 
         Console.ReadKey();

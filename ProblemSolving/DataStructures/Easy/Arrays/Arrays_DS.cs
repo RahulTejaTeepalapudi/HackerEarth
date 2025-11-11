@@ -1,4 +1,6 @@
-﻿namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
+﻿using Common;
+
+namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
 
 public partial class Result
 {
@@ -32,12 +34,16 @@ public class Arrays_DS
         int n = int.Parse(lines[0]);
         var list = lines[1].Split(' ').Select(n => int.Parse(n)).ToList();
 
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Magenta);
+
+        // Log input
         Console.WriteLine($"Input: {string.Join(" ", list)}");
 
         var result = Result.ReverseArray(list);
 
-        Console.ForegroundColor = ConsoleColor.Green;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Green);
+
+        // Log output
         Console.WriteLine($"Output: {string.Join(" ", result)}");
 
         Console.ReadKey();

@@ -1,4 +1,6 @@
-﻿namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
+﻿using Common;
+
+namespace Practice.ProblemSolving.DataStructures.Easy.Arrays;
 
 public partial class Result
 {
@@ -96,7 +98,9 @@ public class Dynamic_Array
 
         List<int> result = Result.DynamicArray(n, queries);
 
-        Console.ForegroundColor = ConsoleColor.Green;
+        ConsoleUtil.SetForegroundColor(ConsoleColor.Green);
+
+        // Log output
         Console.WriteLine("Output:");
         result.ForEach(r => Console.WriteLine(r));
 
